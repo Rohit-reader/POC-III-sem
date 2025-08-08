@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Law Assist AI</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Law Assist AI</h1>
+        <textarea id="incident" placeholder="Describe the incident..."></textarea>
+        <button onclick="predict()">Predict Law Section</button>
+        <button onclick="startVoice()">🎙️ Voice Input</button>
+        <div id="results"></div>
+    </div>
+
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>
